@@ -114,6 +114,41 @@ body {
     .btn:hover {
       background-color: #b8956f;
     }
+    .intro-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fdfaf7; /* світлий фон */
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 340px;
+  flex: 1 1 280px;
+}
+
+.highlight .bar {
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background-color: #E1A100; /* гірчично-жовтий */
+  margin-right: 16px;
+  border-radius: 4px;
+}
+
+.highlight p {
+  margin: 0;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
   </style>
 </head>
 <body>
@@ -127,6 +162,21 @@ body {
     <a href="#contact">Контакти</a>
   </nav>
 
+  <section class="intro-highlights">
+  <div class="highlight">
+    <span class="bar"></span>
+    <p>Більше 6 років досвіду викладання</p>
+  </div>
+  <div class="highlight">
+    <span class="bar"></span>
+    <p>Диплом вчителя словацької мови і літератури</p>
+  </div>
+  <div class="highlight">
+    <span class="bar"></span>
+    <p>Навчання на інтерактивних платформах</p>
+  </div>
+</section>
+  
   <section id="about">
     <h2>Про мене</h2>
       <ul class="about-list">
